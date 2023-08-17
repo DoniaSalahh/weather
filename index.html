@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-white d-flex align-items-center" href="#">
+                <img src="images/logo@2x.png" alt="">
+                <div class="txt d-flex flex-column ms-3 ">
+                    <span class="fs-6 fw-bold"> Weather</span>
+                    <span class="two">tagline goes here</span>
+                </div>
+            </a>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link ac" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" aria-disabled="true">Live cameras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" aria-disabled="true">Photos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" aria-disabled="true">Contact</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- start home -->
+    <div class="home">
+        <div class="container">
+            <div class="text">
+                <input type="text" placeholder="Find your location..." id="demo">
+                <button id="find" onclick="findweather()">Find</button>
+            </div>
+        </div>
+    </div>
+    <!-- end home -->
+    <!-- start weather -->
+    <div class="weather">
+        <div class="container">
+            <div class="row" id="box">
+            </div>
+        </div>
+    </div>
+    <!-- end weather -->
+    <!-- start footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="txt">
+                <div class="text">
+                    <input type="text" placeholder="Enter your email to subscribe..." class="">
+                    <input type="submit" value="Subscribe" >
+                </div>
+                <div class="icons">
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Copyright 2023 Designed by Donia Salah. All rights reserved
+            </p>
+        </div>
+    </div>
+    <!-- end footer -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
